@@ -12,6 +12,10 @@ jobs:
   build-and-test:
     runs-on: ubuntu-latest
 
+    # permissions:
+    #   contents: read
+    #   packages: write
+
     steps:
       - name: 1. Preuzimanje koda iz Git-a
         uses: actions/checkout@v4
